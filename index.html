@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Jogo da Forca - Sprint 02</title>
+
+        <link rel="stylesheet" href="./CSS/reset.css">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Chanllenge - Jogo da Forca</h1>
+            <img src="./image/Vector.png" alt="Logo da Alura (somente a letra 'a')" id="logo_a">
+        </header>
+        <main>
+            <div id="div-desaparece">
+                <input class="btn-iniciar" type="submit" value="Iniciar Jogo" id="iniciar_jogo" onclick="iniciarJogo()">
+                <input class="btn-adcPalavra" type="submit" value="Adicionar Palavra" id="adc_palavra" onclick="adcPalavra()">
+            </div>
+            <section id="section-adcPalavra">
+                <input class="dig_novaPalavra" id="palvra_nova" type="text" maxlength="8" placeholder="Digite uma palavra">
+                <div id="aviso">
+                    <img src="./image/!.png" class="img_aviso" alt="!">
+                    <label for="palvara_nova">Máximo 8 letras</label>
+                </div>
+                <div id="btns-novaPalavra">
+                    <input class="btn-salvar" type="submit" value="Salvar e começar" id="salva_palavra" onclick="salvar()">
+                    <input class="btn-cancelar" type="submit" value="Cancelar" id="cancela" onclick="cancelar()">
+                </div>
+            </section>       
+            <section id="section-aparece-forca">
+                <div id="canvas">
+                    <canvas id="forca" height="860px" width="1200px"></canvas>
+                </div>
+                <div id="btns-jogo">
+                    <input class="btn-novoJogo" type="submit" value="Novo Jogo" id="novoJogo" onclick="novoJogo()">
+                    <input class="btn-sair" type="submit" value="Sair" id="sair" onclick="sair()">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyrigth"> &copy; Copyrigth Alura e Programa ONE - 2022</p>
+            <p class="copyrigth"> &copy; Copyrigth Pedro H. P. Gutierrez - 2022</p>
+        </footer>
+        <script type="text/javascript" src="./JS/script.js"></script>
+        <script type="text/javascript" src="./JS/canvas.js"></script>
+    </body>
+</html>

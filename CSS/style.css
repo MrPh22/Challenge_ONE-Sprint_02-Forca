@@ -1,0 +1,350 @@
+body {
+    font-family: 'Fira Code', monospace;
+
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+}
+
+header {
+    padding: 2.5em 0;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#logo_a {
+    position: absolute;
+    left: 30px;
+    right: 37.43%;
+    top: 25px;
+    bottom: 0%;
+}
+
+footer {
+    padding: 2.75em 0 0 0;
+    margin: -50px 0 0 0;
+}
+
+footer p {
+    text-align: center;
+    line-height: 2;
+    font-weight: bold;
+}
+
+/* INÍCIO */
+
+.btn-iniciar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 317px;
+    height: 105px;
+    left: 562px;
+    top: 394px;
+
+    background: #0A3871;
+    border: 0;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 19px;
+   
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    transition: 425ms all;
+}
+
+.btn-iniciar:hover {
+    background: #2571ce;
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+.btn-adcPalavra {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 317px;
+    height: 102px;
+    left: 562px;
+    top: 528px;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 19px;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    transition: 425ms all;
+}
+
+.btn-adcPalavra:hover {
+    background: #ffffff;
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+/* Adicionar Nova Palavra*/
+
+.dig_novaPalavra {
+    position: absolute;
+    width: 413px;
+    height: 48px;
+    left: 376px;
+    top: 256px;
+
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    justify-content: baseline;
+
+    color: #0A3871;
+    background: transparent;
+    border: none;
+    text-transform:uppercase;
+}
+
+.dig_novaPalavra:focus { 
+    border: none;
+    outline: none;
+}
+
+#aviso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 150px;
+    height: 18px;
+    left: 376px;
+    top: 667px;
+}
+
+#aviso img {
+    width: 16px;
+    height: 16px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#aviso label {
+    width: 300px;
+    height: 18px;
+
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#btns-novaPalavra {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left: 376px;
+    top: 701px;
+}
+
+.btn-salvar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+
+    background: #0A3871;
+    border-radius: 24px;
+    border: 0;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    
+    transition: 425ms all;
+}
+
+.btn-salvar:hover {
+    background: #1b6bce;
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #0A3871;
+
+    transition: 425ms all;
+}
+
+.btn-cancelar:hover {
+    background: #ffffff;
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+/* JOGO */
+
+#btns-jogo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left: 376px;
+    top: 850px;
+}
+
+.btn-novoJogo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+
+    background: #0A3871;
+    border-radius: 24px;
+    border: 0;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    
+    transition: 425ms all;
+}
+
+.btn-novoJogo:hover {
+    background: #1b6bce;
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+.btn-sair {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #0A3871;
+
+    transition: 425ms all;
+}
+
+.btn-sair:hover {
+    background: #ffffff;
+    transform: scale(105%);
+    cursor: pointer;
+}
